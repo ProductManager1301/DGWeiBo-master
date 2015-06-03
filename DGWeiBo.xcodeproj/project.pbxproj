@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235480EA1B1DB12A00264B74 /* beijing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235480E41B1DB12A00264B74 /* beijing@2x.png */; };
+		235480EB1B1DB12A00264B74 /* 发现@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235480E61B1DB12A00264B74 /* 发现@2x.png */; };
+		235480EC1B1DB12A00264B74 /* 我@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235480E71B1DB12A00264B74 /* 我@2x.png */; };
+		235480ED1B1DB12A00264B74 /* 消息@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235480E81B1DB12A00264B74 /* 消息@2x.png */; };
+		235480EE1B1DB12A00264B74 /* 首页@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235480E91B1DB12A00264B74 /* 首页@2x.png */; };
+		235613071B1E8B4A00AC809E /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235613061B1E8B4A00AC809E /* NewsViewController.m */; };
+		2356130D1B1E8B8700AC809E /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356130C1B1E8B8700AC809E /* MyViewController.m */; };
+		235613101B1E8BCB00AC809E /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356130F1B1E8BCB00AC809E /* FindViewController.m */; };
 		48322B9E1B19583700AAA408 /* HeadUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48322B9D1B19583700AAA408 /* HeadUserInfoCell.m */; };
 		48322BA11B19588D00AAA408 /* CategordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48322BA01B19588D00AAA408 /* CategordCell.m */; };
 		48322BA41B196E3600AAA408 /* UIImage+APLBlurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 48322BA31B196E3600AAA408 /* UIImage+APLBlurEffect.m */; };
@@ -97,6 +105,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		235480E41B1DB12A00264B74 /* beijing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beijing@2x.png"; sourceTree = "<group>"; };
+		235480E61B1DB12A00264B74 /* 发现@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现@2x.png"; sourceTree = "<group>"; };
+		235480E71B1DB12A00264B74 /* 我@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我@2x.png"; sourceTree = "<group>"; };
+		235480E81B1DB12A00264B74 /* 消息@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息@2x.png"; sourceTree = "<group>"; };
+		235480E91B1DB12A00264B74 /* 首页@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页@2x.png"; sourceTree = "<group>"; };
+		235613051B1E8B4A00AC809E /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		235613061B1E8B4A00AC809E /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		2356130B1B1E8B8700AC809E /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		2356130C1B1E8B8700AC809E /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		2356130E1B1E8BCB00AC809E /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		2356130F1B1E8BCB00AC809E /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
 		48322B9C1B19583700AAA408 /* HeadUserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadUserInfoCell.h; sourceTree = "<group>"; };
 		48322B9D1B19583700AAA408 /* HeadUserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadUserInfoCell.m; sourceTree = "<group>"; };
 		48322B9F1B19588D00AAA408 /* CategordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategordCell.h; sourceTree = "<group>"; };
@@ -260,6 +279,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235480E51B1DB12A00264B74 /* TAP栏 */ = {
+			isa = PBXGroup;
+			children = (
+				235480E61B1DB12A00264B74 /* 发现@2x.png */,
+				235480E71B1DB12A00264B74 /* 我@2x.png */,
+				235480E81B1DB12A00264B74 /* 消息@2x.png */,
+				235480E91B1DB12A00264B74 /* 首页@2x.png */,
+			);
+			path = "TAP栏";
+			sourceTree = "<group>";
+		};
+		235480EF1B1DB12E00264B74 /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				235480E41B1DB12A00264B74 /* beijing@2x.png */,
+				235480E51B1DB12A00264B74 /* TAP栏 */,
+			);
+			name = "图片";
+			sourceTree = "<group>";
+		};
+		235613021B1E8AE400AC809E /* MyViewController(我) */ = {
+			isa = PBXGroup;
+			children = (
+				2356130B1B1E8B8700AC809E /* MyViewController.h */,
+				2356130C1B1E8B8700AC809E /* MyViewController.m */,
+			);
+			name = "MyViewController(我)";
+			sourceTree = "<group>";
+		};
+		235613031B1E8AE800AC809E /* FindViewController(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				2356130E1B1E8BCB00AC809E /* FindViewController.h */,
+				2356130F1B1E8BCB00AC809E /* FindViewController.m */,
+			);
+			name = "FindViewController(发现)";
+			sourceTree = "<group>";
+		};
+		235613041B1E8AEB00AC809E /* NewsViewController(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				235613051B1E8B4A00AC809E /* NewsViewController.h */,
+				235613061B1E8B4A00AC809E /* NewsViewController.m */,
+			);
+			name = "NewsViewController(消息)";
+			sourceTree = "<group>";
+		};
 		48322B9B1B19580C00AAA408 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,8 +377,12 @@
 		4875F69F1B1411BA004AECD4 /* DGWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				235480EF1B1DB12E00264B74 /* 图片 */,
 				48D1EAD21B1609FE00903BAF /* SDK */,
 				48D0996B1B1885CA001399FB /* ViewControllers */,
+				235613041B1E8AEB00AC809E /* NewsViewController(消息) */,
+				235613031B1E8AE800AC809E /* FindViewController(发现) */,
+				235613021B1E8AE400AC809E /* MyViewController(我) */,
 				4875F6A41B1411BA004AECD4 /* AppDelegate.h */,
 				4875F6A51B1411BA004AECD4 /* AppDelegate.m */,
 				4875F6AA1B1411BA004AECD4 /* Main.storyboard */,
@@ -738,6 +808,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235480EC1B1DB12A00264B74 /* 我@2x.png in Resources */,
 				48B7E4D91B1BF86E00252A2A /* lclendar.png in Resources */,
 				48B7E4DF1B1BF86E00252A2A /* search.png in Resources */,
 				48B7E4C71B1BF84600252A2A /* Info.plist in Resources */,
@@ -749,6 +820,8 @@
 				4875F6B11B1411BA004AECD4 /* LaunchScreen.xib in Resources */,
 				48B7E4D71B1BF86E00252A2A /* heard.png in Resources */,
 				48D0997F1B18950E001399FB /* DGImageCollectionCell.xib in Resources */,
+				235480EB1B1DB12A00264B74 /* 发现@2x.png in Resources */,
+				235480ED1B1DB12A00264B74 /* 消息@2x.png in Resources */,
 				48B7E5511B1CB25B00252A2A /* pinglun.png in Resources */,
 				48D1EAD81B160B3300903BAF /* WeiBoTableViewCell.xib in Resources */,
 				48B7E4DB1B1BF86E00252A2A /* messages.png in Resources */,
@@ -758,7 +831,9 @@
 				4875F6AE1B1411BA004AECD4 /* Images.xcassets in Resources */,
 				48B7E4DE1B1BF86E00252A2A /* RootBackgroud.png in Resources */,
 				4875F6D31B14159E004AECD4 /* WeiboSDK.bundle in Resources */,
+				235480EE1B1DB12A00264B74 /* 首页@2x.png in Resources */,
 				48B7E4DA1B1BF86E00252A2A /* location.png in Resources */,
+				235480EA1B1DB12A00264B74 /* beijing@2x.png in Resources */,
 				48B7E4E01B1BF86E00252A2A /* TitleImage1.png in Resources */,
 				48322BC41B1B465900AAA408 /* CommentTableViewCell.xib in Resources */,
 				48B7E54D1B1CB0F300252A2A /* zan.png in Resources */,
@@ -794,10 +869,13 @@
 				4875F7101B149C7B004AECD4 /* AFNetworkReachabilityManager.m in Sources */,
 				48D1EABC1B15A26E00903BAF /* JSONModel+networking.m in Sources */,
 				4875F7141B149C7B004AECD4 /* AFURLResponseSerialization.m in Sources */,
+				235613101B1E8BCB00AC809E /* FindViewController.m in Sources */,
 				4875F7121B149C7B004AECD4 /* AFURLConnectionOperation.m in Sources */,
 				48D1EAB81B15A26E00903BAF /* JSONModelError.m in Sources */,
+				2356130D1B1E8B8700AC809E /* MyViewController.m in Sources */,
 				48322B9E1B19583700AAA408 /* HeadUserInfoCell.m in Sources */,
 				48322BA41B196E3600AAA408 /* UIImage+APLBlurEffect.m in Sources */,
+				235613071B1E8B4A00AC809E /* NewsViewController.m in Sources */,
 				48D099801B18950E001399FB /* DGImageCollectionLayout.m in Sources */,
 				48322BC21B1B461900AAA408 /* CommentTableVIewCell.m in Sources */,
 				4875F7201B149DF6004AECD4 /* ConfigFile.m in Sources */,

@@ -47,20 +47,6 @@
         self.wbtoken = @"";
     }
     
-
-    [DGPackageData userSendedWeiboWithID:self.wbCurrentUserID page:@"1" responseObject:^(id responseObject) {
-        //成功
-        NewestWeiBoesModel * nes = responseObject;
-        NSArray * array = nes.statuses;
-        NewestWeiBoModel * weibo = array[0];
-        NSString * s = weibo.created_at;
-        
-    } failure:^(NSError *error) {
-        //失败
-        NSLog(@"");
-    }];
-
-    
     return YES;
 }
 

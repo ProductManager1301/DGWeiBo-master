@@ -99,20 +99,4 @@ typedef void(^requestData)(id responseObject);
  */
 + (void)userSendedWeiboWithID:(NSString *)ID page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @end

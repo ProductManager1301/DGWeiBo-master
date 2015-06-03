@@ -35,10 +35,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuSlider) name:MENU_SLIDER object:nil];
     
-    
     self.view.layer.anchorPoint = CGPointMake(0, 0.5);
     self.view.layer.position = CGPointMake(0, self.view.layer.position.y);
-    
     
     _shadeView = [[UIView alloc] initWithFrame:self.view.bounds];
     
@@ -74,7 +72,6 @@ static float  _scale = 0.7f;
         scale = 1.0;
         _shadeView.hidden = YES;
     }
-    
 
     [UIView animateWithDuration:0.3 animations:^{
         self.view.layer.position = CGPointMake(x, self.view.layer.position.y);
@@ -142,7 +139,6 @@ static float _siderEndedX = 80.0f;
     
 }
 
-
 - (UIColor *)myTintColor{
     return [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
 }
@@ -155,6 +151,5 @@ static float _siderEndedX = 80.0f;
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
 
 @end

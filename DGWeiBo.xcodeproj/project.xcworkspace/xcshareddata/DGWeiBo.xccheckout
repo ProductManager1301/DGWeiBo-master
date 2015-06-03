@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>39C1FC76-BE18-487D-99E3-8D49B072FC53</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DGWeiBo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE123D9EA91133BD8329C8B4D40C607C6328D68A</key>
+		<string>https://github.com/ProductManager1301/DGWeiBo-master.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DGWeiBo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE123D9EA91133BD8329C8B4D40C607C6328D68A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ProductManager1301/DGWeiBo-master.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE123D9EA91133BD8329C8B4D40C607C6328D68A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE123D9EA91133BD8329C8B4D40C607C6328D68A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DGWeiBo-master</string>
+		</dict>
+	</array>
+</dict>
+</plist>
