@@ -10,6 +10,14 @@
 
 #define MENU_SLIDER @"menuSlider"
 
+static float _siderEndedX = 80.0f;
+static float  _scale = 0.8f;
+
+
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
 @interface BaseNavigationController : UINavigationController
 
 

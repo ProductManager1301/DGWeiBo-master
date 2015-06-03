@@ -6,9 +6,6 @@
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
-#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
 #import "BaseNavigationController.h"
 #import "UIImage+APLBlurEffect.h"
 
@@ -58,7 +55,6 @@
     [self menuSlider];
 }
 
-static float  _scale = 0.7f;
 
 - (void)menuSlider{
     float scale = 0;
@@ -81,7 +77,6 @@ static float  _scale = 0.7f;
 }
 
 
-static float _siderEndedX = 80.0f;
 - (void)panGestureRecognizer:(UIPanGestureRecognizer *)pan{
     
     CGPoint point = [pan translationInView:self.view];
@@ -102,11 +97,7 @@ static float _siderEndedX = 80.0f;
         
         rect.origin.x = point.x + startPoint.x;
         
-        scale = (SCREEN_WIDTH - rect.origin.x)/SCREEN_WIDTH;
-        
-        if (scale<0 || scale>1) return;
-
-        scale = sqrt(sqrt(scale));
+        scale =  1.0 - (1.0 -_scale)*(rect.origin.x)/(SCREEN_WIDTH - _siderEndedX);
         
         if (scale<_scale) {
             scale = _scale;

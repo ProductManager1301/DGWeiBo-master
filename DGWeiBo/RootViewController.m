@@ -15,6 +15,7 @@
 #import "HTTPRequest.h"
 #import "DGPackageData.h"
 #import "AppDelegate.h"
+#import "BaseNavigationController.h"
 
 @interface RootViewController ()<UITableViewDataSource , UITableViewDelegate>
 
@@ -58,6 +59,12 @@
     self.delegate = (id)navigationController.topViewController;
     
     
+    self.tableView.layer.anchorPoint= CGPointMake(1 ,0.5);
+    self.tableView.layer.position  =CGPointMake(SCREEN_WIDTH/2.0f, self.tableView.layer.position.y);
+    self.tableView.layer.transform = CATransform3DMakeScale(_scale, _scale, 1.0f);
+    
+    [navigationController.view.layer addObserver:self forKeyPath:@"position" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    
     //设置列表分割线风格
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -77,6 +84,16 @@
  
 }
 
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    CGPoint point = [change[NSKeyValueChangeNewKey] CGPointValue];
+    CGFloat x =SCREEN_WIDTH/2.0f+ (SCREEN_WIDTH/2.0f)*(point.x/(SCREEN_WIDTH-_siderEndedX));
+    CGFloat scale = _scale + (1.0 - _scale)*(point.x/(SCREEN_WIDTH - _siderEndedX));
+
+    self.tableView.layer.position = CGPointMake(x, self.tableView.layer.position.y);
+    self.tableView.layer.transform = CATransform3DMakeScale(scale, scale, 1.0f);
+
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
