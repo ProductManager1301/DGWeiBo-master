@@ -76,7 +76,8 @@
                            @"access_token" : source_token,
                            @"count"        : count,
                            @"page"         : page,
-                           @"base_app"     : baseApp};
+                           @"base_app"     : baseApp,
+                           @"feature"      : @"0"};
     
     NSString * urlType = @"statuses/friends_timeline.json";
     

@@ -9,6 +9,7 @@
 #import "WeiBoTableViewCell.h"
 #import "DGJSONModel.h"
 #import "HTTPRequest.h"
+#import "BaseImageView.h"
 
 
 void * _timeContext;

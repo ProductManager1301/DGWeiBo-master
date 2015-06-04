@@ -49,7 +49,6 @@ static NSOperationQueue * downLoadImageManager() {
 //组装数据，发送请求并返回data
 + (void)packageDatas:(NSDictionary *)sendDic urlType:(NSString *)urlType responseObject:(requestData)blockObject failure:(failureError)failure{
 
-    //字符串拼接  s1 =a  s2=b   s = a/b
     NSString *strURL =[HTTPURL stringByAppendingPathComponent:urlType];
         
     NSLog(@"%@", strURL);

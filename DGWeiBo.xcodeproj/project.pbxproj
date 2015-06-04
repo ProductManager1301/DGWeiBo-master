@@ -68,6 +68,8 @@
 		48B7E54F1B1CB20200252A2A /* zhuanfa.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7E54E1B1CB20200252A2A /* zhuanfa.png */; };
 		48B7E5511B1CB25B00252A2A /* pinglun.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7E5501B1CB25B00252A2A /* pinglun.png */; };
 		48B7E5571B1CB8B400252A2A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7E5561B1CB8B400252A2A /* BaseViewController.m */; };
+		48CEE1161B1F6220007B245E /* DGDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CEE1151B1F6220007B245E /* DGDefault.png */; };
+		48CEE1191B1F623E007B245E /* BaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CEE1181B1F623E007B245E /* BaseImageView.m */; };
 		48D0996F1B188608001399FB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D0996E1B188608001399FB /* RootViewController.m */; };
 		48D099751B188A1A001399FB /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D099741B188A1A001399FB /* BaseNavigationController.m */; };
 		48D0997E1B18950E001399FB /* DGImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D099781B18950E001399FB /* DGImageCollectionCell.m */; };
@@ -204,6 +206,9 @@
 		48B7E5501B1CB25B00252A2A /* pinglun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinglun.png; sourceTree = "<group>"; };
 		48B7E5551B1CB8B400252A2A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		48B7E5561B1CB8B400252A2A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		48CEE1151B1F6220007B245E /* DGDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DGDefault.png; sourceTree = "<group>"; };
+		48CEE1171B1F623E007B245E /* BaseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseImageView.h; sourceTree = "<group>"; };
+		48CEE1181B1F623E007B245E /* BaseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
 		48D0996D1B188608001399FB /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		48D0996E1B188608001399FB /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		48D099731B188A1A001399FB /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -497,6 +502,7 @@
 		48B7E4CA1B1BF86E00252A2A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				48CEE1151B1F6220007B245E /* DGDefault.png */,
 				48B7E5501B1CB25B00252A2A /* pinglun.png */,
 				48B7E54E1B1CB20200252A2A /* zhuanfa.png */,
 				48B7E54C1B1CB0F300252A2A /* zan.png */,
@@ -724,6 +730,8 @@
 				48D1EAD41B160B1300903BAF /* WeiBoTableViewCell.h */,
 				48D1EAD51B160B1300903BAF /* WeiBoTableViewCell.m */,
 				48D1EAD71B160B3300903BAF /* WeiBoTableViewCell.xib */,
+				48CEE1171B1F623E007B245E /* BaseImageView.h */,
+				48CEE1181B1F623E007B245E /* BaseImageView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -777,6 +785,7 @@
 				TargetAttributes = {
 					4875F69C1B1411BA004AECD4 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y6SLB82Z3X;
 					};
 					4875F6B51B1411BA004AECD4 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -808,6 +817,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CEE1161B1F6220007B245E /* DGDefault.png in Resources */,
 				235480EC1B1DB12A00264B74 /* 我@2x.png in Resources */,
 				48B7E4D91B1BF86E00252A2A /* lclendar.png in Resources */,
 				48B7E4DF1B1BF86E00252A2A /* search.png in Resources */,
@@ -884,6 +894,7 @@
 				4875F7181B149C8C004AECD4 /* HTTPRequest.m in Sources */,
 				48D0996F1B188608001399FB /* RootViewController.m in Sources */,
 				48D1EAD11B1607AA00903BAF /* PullRefreshTableView.m in Sources */,
+				48CEE1191B1F623E007B245E /* BaseImageView.m in Sources */,
 				4875F71C1B149CF0004AECD4 /* GCDCompressionImage.m in Sources */,
 				48D1EABB1B15A26E00903BAF /* JSONHTTPClient.m in Sources */,
 				48D1EABE1B15A26E00903BAF /* JSONValueTransformer.m in Sources */,
@@ -1029,6 +1040,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DGWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) -all_load";
 				LIBRARY_SEARCH_PATHS = (
@@ -1043,6 +1055,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DGWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) -all_load";
 				LIBRARY_SEARCH_PATHS = (

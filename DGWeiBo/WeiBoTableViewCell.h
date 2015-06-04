@@ -40,7 +40,9 @@
 @end
 
 #import "DGImageViewerView.h"
-@interface WeiBoImageView : UIImageView
+#import "BaseImageView.h"
+
+@interface WeiBoImageView : BaseImageView
 
 @property (strong , nonatomic)NSArray * imageUrls;
 @property (strong , nonatomic)DGImageViewerView * scrollView;
