@@ -159,10 +159,24 @@
     
 }
 
+//获取当前登录用户及其所关注用户的最新微博
++(void)page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure{
+    
+    //请求消息体
+    NSDictionary * dic = @{@"source"      : kAppKey,
+                           @"access_token": source_token};
+    
+    NSString * urlString = @"https://api.weibo.com/2/statuses/friends_timeline.json";
+    
+    [HTTPRequest packageDatas:dic urlType:urlString responseObject:^(id responseObject) {
+        //成功
+    } failure:^(NSError *error) {
+        //失败
+    }];
+}
 
 
-
-
+//
 
 
 

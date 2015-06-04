@@ -99,4 +99,14 @@ typedef void(^requestData)(id responseObject);
  */
 + (void)userSendedWeiboWithID:(NSString *)ID page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure;
 
+/*=================获取当前登录用户及其所关注用户的最新微博===================
+ * created_at	微博创建时间
+ * ID   : 微博id
+ *
+ *
+ *
+ *
+*/
++(void)page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure;
+
 @end

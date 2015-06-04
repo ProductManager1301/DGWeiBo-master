@@ -688,14 +688,12 @@
 			isa = PBXGroup;
 			children = (
 				48D1EACC1B16057800903BAF /* DGJSONModel.h */,
-				48D1EABF1B15A65600903BAF /* NewestWeiBoModel.h */,
-				48D1EAC01B15A65600903BAF /* NewestWeiBoModel.m */,
+				EF62B1511B1FF0DB004F221A /* 返回最新德微博Model */,
+				EF62B1501B1FED47004F221A /* 评论显示Model */,
 				48D1EAC31B15A90F00903BAF /* LocationModel.h */,
 				48D1EAC41B15A90F00903BAF /* LocationModel.m */,
 				48D1EAC61B15AEAD00903BAF /* UserInfoModel.h */,
 				48D1EAC71B15AEAD00903BAF /* UserInfoModel.m */,
-				48322BC51B1B593700AAA408 /* CommentModel.h */,
-				48322BC61B1B593700AAA408 /* CommentModel.m */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -734,6 +732,24 @@
 				48CEE1181B1F623E007B245E /* BaseImageView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		EF62B1501B1FED47004F221A /* 评论显示Model */ = {
+			isa = PBXGroup;
+			children = (
+				48322BC51B1B593700AAA408 /* CommentModel.h */,
+				48322BC61B1B593700AAA408 /* CommentModel.m */,
+			);
+			name = "评论显示Model";
+			sourceTree = "<group>";
+		};
+		EF62B1511B1FF0DB004F221A /* 返回最新德微博Model */ = {
+			isa = PBXGroup;
+			children = (
+				48D1EABF1B15A65600903BAF /* NewestWeiBoModel.h */,
+				48D1EAC01B15A65600903BAF /* NewestWeiBoModel.m */,
+			);
+			name = "返回最新德微博Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
