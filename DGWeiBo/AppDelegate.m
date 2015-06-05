@@ -47,6 +47,9 @@
         self.wbtoken = @"";
     }
     
+    //发送微博测试
+    
+    
     return YES;
 }
 

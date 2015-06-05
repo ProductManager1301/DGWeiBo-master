@@ -12,6 +12,7 @@
 #import "DGJSONModel.h"
 #import "AFNetworking.h"
 
+//
 #define source_token  [(AppDelegate*)[[UIApplication sharedApplication] delegate] wbtoken]
 
 @implementation DGPackageData
@@ -45,6 +46,7 @@
 
 //获取用户信息
 + (void)gainUserInfoWithUID:(NSString *)uid responseObject:(requestData)blockObject failure:(failureError)failure{
+    
     NSDictionary * dic = @{@"source"       : kAppKey,
                            @"access_token" : source_token,
                            @"uid"          : uid,
@@ -159,36 +161,56 @@
     
 }
 
-//获取当前登录用户及其所关注用户的最新微博
-+(void)page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure{
+
+//发布一条微博
++(void)publishWeibothstatus:(NSString *)status rip:(NSString *)rip responseObject:(requestData)blockObject failure:(failureError)failure{
     
-    //请求消息体
     NSDictionary * dic = @{@"source"      : kAppKey,
-                           @"access_token": source_token};
+                           @"access_token": source_token,
+                           @"status":status,
+                           @"rip":rip};
     
-    NSString * urlString = @"https://api.weibo.com/2/statuses/friends_timeline.json";
+    NSString * urlString = @"statuses/update.json";
     
     [HTTPRequest packageDatas:dic urlType:urlString responseObject:^(id responseObject) {
-        //成功
+        
+        NSError * error;
+        NewestWeiBoModel * wbs = [[NewestWeiBoModel alloc] initWithString:responseObject error:&error];
+        if (error) {
+            NSLog(@"错误%@",error);
+        }else{
+            blockObject(wbs);
+        }
+        
     } failure:^(NSError *error) {
-        //失败
+        failure(error);
     }];
 }
 
 
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
+//发布评论
++(void)senderCommentsWithID:(NSString *)ID comment:(NSString *)comment rip:(NSString *)rip responseObject:(requestData)blockObject failure:(failureError)failure{
+    
+    NSDictionary * dic = @{@"source"      : kAppKey,
+                           @"access_token": source_token,
+                           @"id":ID,
+                           @"comment":comment,
+                           @"rip":rip};
+    NSString * urlString = @"comments/create.json";
+    
+    [HTTPRequest packageDatas:dic urlType:urlString responseObject:^(id responseObject) {
+        
+        NSError * error;
+        CommentModel * weibo = [[CommentModel alloc] initWithString:responseObject error:&error];
+        if (error) {
+            NSLog(@"%@",error);
+            failure(error);
+        }else{
+            blockObject(weibo);
+        }
+    } failure:^(NSError *error) {
+        failure(error);
+    }];
+}
 
 @end

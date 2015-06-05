@@ -15,6 +15,10 @@
 		235613071B1E8B4A00AC809E /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235613061B1E8B4A00AC809E /* NewsViewController.m */; };
 		2356130D1B1E8B8700AC809E /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356130C1B1E8B8700AC809E /* MyViewController.m */; };
 		235613101B1E8BCB00AC809E /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2356130F1B1E8BCB00AC809E /* FindViewController.m */; };
+		235613161B204C5000AC809E /* MyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235613141B204C5000AC809E /* MyViewCell.m */; };
+		235613171B204C5000AC809E /* MyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235613151B204C5000AC809E /* MyViewCell.xib */; };
+		23D0E1491B2142AC00ACB222 /* releaseWeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D0E1481B2142AC00ACB222 /* releaseWeiBoViewController.m */; };
+		23D0E14C1B214BCA00ACB222 /* GetIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D0E14B1B214BCA00ACB222 /* GetIPAddress.m */; };
 		48322B9E1B19583700AAA408 /* HeadUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48322B9D1B19583700AAA408 /* HeadUserInfoCell.m */; };
 		48322BA11B19588D00AAA408 /* CategordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48322BA01B19588D00AAA408 /* CategordCell.m */; };
 		48322BA41B196E3600AAA408 /* UIImage+APLBlurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 48322BA31B196E3600AAA408 /* UIImage+APLBlurEffect.m */; };
@@ -118,6 +122,13 @@
 		2356130C1B1E8B8700AC809E /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		2356130E1B1E8BCB00AC809E /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		2356130F1B1E8BCB00AC809E /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		235613131B204C5000AC809E /* MyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewCell.h; sourceTree = "<group>"; };
+		235613141B204C5000AC809E /* MyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewCell.m; sourceTree = "<group>"; };
+		235613151B204C5000AC809E /* MyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewCell.xib; sourceTree = "<group>"; };
+		23D0E1471B2142AC00ACB222 /* releaseWeiBoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = releaseWeiBoViewController.h; sourceTree = "<group>"; };
+		23D0E1481B2142AC00ACB222 /* releaseWeiBoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = releaseWeiBoViewController.m; sourceTree = "<group>"; };
+		23D0E14A1B214BCA00ACB222 /* GetIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIPAddress.h; sourceTree = "<group>"; };
+		23D0E14B1B214BCA00ACB222 /* GetIPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIPAddress.m; sourceTree = "<group>"; };
 		48322B9C1B19583700AAA408 /* HeadUserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadUserInfoCell.h; sourceTree = "<group>"; };
 		48322B9D1B19583700AAA408 /* HeadUserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadUserInfoCell.m; sourceTree = "<group>"; };
 		48322B9F1B19588D00AAA408 /* CategordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategordCell.h; sourceTree = "<group>"; };
@@ -307,8 +318,8 @@
 		235613021B1E8AE400AC809E /* MyViewController(我) */ = {
 			isa = PBXGroup;
 			children = (
-				2356130B1B1E8B8700AC809E /* MyViewController.h */,
-				2356130C1B1E8B8700AC809E /* MyViewController.m */,
+				235613111B204C1400AC809E /* MyViewController */,
+				235613121B204C2000AC809E /* MyViewCell */,
 			);
 			name = "MyViewController(我)";
 			sourceTree = "<group>";
@@ -329,6 +340,34 @@
 				235613061B1E8B4A00AC809E /* NewsViewController.m */,
 			);
 			name = "NewsViewController(消息)";
+			sourceTree = "<group>";
+		};
+		235613111B204C1400AC809E /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2356130B1B1E8B8700AC809E /* MyViewController.h */,
+				2356130C1B1E8B8700AC809E /* MyViewController.m */,
+			);
+			name = MyViewController;
+			sourceTree = "<group>";
+		};
+		235613121B204C2000AC809E /* MyViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				235613131B204C5000AC809E /* MyViewCell.h */,
+				235613141B204C5000AC809E /* MyViewCell.m */,
+				235613151B204C5000AC809E /* MyViewCell.xib */,
+			);
+			name = MyViewCell;
+			sourceTree = "<group>";
+		};
+		23D0E1461B21428800ACB222 /* releaseWeiBo(发布微博) */ = {
+			isa = PBXGroup;
+			children = (
+				23D0E1471B2142AC00ACB222 /* releaseWeiBoViewController.h */,
+				23D0E1481B2142AC00ACB222 /* releaseWeiBoViewController.m */,
+			);
+			name = "releaseWeiBo(发布微博)";
 			sourceTree = "<group>";
 		};
 		48322B9B1B19580C00AAA408 /* View */ = {
@@ -382,14 +421,11 @@
 		4875F69F1B1411BA004AECD4 /* DGWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				4875F6A41B1411BA004AECD4 /* AppDelegate.h */,
+				4875F6A51B1411BA004AECD4 /* AppDelegate.m */,
 				235480EF1B1DB12E00264B74 /* 图片 */,
 				48D1EAD21B1609FE00903BAF /* SDK */,
 				48D0996B1B1885CA001399FB /* ViewControllers */,
-				235613041B1E8AEB00AC809E /* NewsViewController(消息) */,
-				235613031B1E8AE800AC809E /* FindViewController(发现) */,
-				235613021B1E8AE400AC809E /* MyViewController(我) */,
-				4875F6A41B1411BA004AECD4 /* AppDelegate.h */,
-				4875F6A51B1411BA004AECD4 /* AppDelegate.m */,
 				4875F6AA1B1411BA004AECD4 /* Main.storyboard */,
 				4875F6AD1B1411BA004AECD4 /* Images.xcassets */,
 				4875F6AF1B1411BA004AECD4 /* LaunchScreen.xib */,
@@ -564,6 +600,10 @@
 				48322BBB1B1B43E300AAA408 /* WeiBoDetailViewController */,
 				48D099701B18876F001399FB /* HomeViewController */,
 				48D0996C1B1885D8001399FB /* RootViewController */,
+				235613041B1E8AEB00AC809E /* NewsViewController(消息) */,
+				235613031B1E8AE800AC809E /* FindViewController(发现) */,
+				235613021B1E8AE400AC809E /* MyViewController(我) */,
+				23D0E1461B21428800ACB222 /* releaseWeiBo(发布微博) */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -688,6 +728,8 @@
 			isa = PBXGroup;
 			children = (
 				48D1EACC1B16057800903BAF /* DGJSONModel.h */,
+				23D0E14A1B214BCA00ACB222 /* GetIPAddress.h */,
+				23D0E14B1B214BCA00ACB222 /* GetIPAddress.m */,
 				EF62B1511B1FF0DB004F221A /* 返回最新德微博Model */,
 				EF62B1501B1FED47004F221A /* 评论显示Model */,
 				48D1EAC31B15A90F00903BAF /* LocationModel.h */,
@@ -846,6 +888,7 @@
 				4875F6B11B1411BA004AECD4 /* LaunchScreen.xib in Resources */,
 				48B7E4D71B1BF86E00252A2A /* heard.png in Resources */,
 				48D0997F1B18950E001399FB /* DGImageCollectionCell.xib in Resources */,
+				235613171B204C5000AC809E /* MyViewCell.xib in Resources */,
 				235480EB1B1DB12A00264B74 /* 发现@2x.png in Resources */,
 				235480ED1B1DB12A00264B74 /* 消息@2x.png in Resources */,
 				48B7E5511B1CB25B00252A2A /* pinglun.png in Resources */,
@@ -882,11 +925,13 @@
 			files = (
 				48D1EAC51B15A90F00903BAF /* LocationModel.m in Sources */,
 				48B7E5571B1CB8B400252A2A /* BaseViewController.m in Sources */,
+				235613161B204C5000AC809E /* MyViewCell.m in Sources */,
 				4875F70D1B149C7B004AECD4 /* AFHTTPRequestOperation.m in Sources */,
 				48D1EAC11B15A65600903BAF /* NewestWeiBoModel.m in Sources */,
 				48D1EAB91B15A26E00903BAF /* NSArray+JSONModel.m in Sources */,
 				48D0997E1B18950E001399FB /* DGImageCollectionCell.m in Sources */,
 				4875F6A91B1411BA004AECD4 /* ViewController.m in Sources */,
+				23D0E14C1B214BCA00ACB222 /* GetIPAddress.m in Sources */,
 				48D1EAB71B15A26E00903BAF /* JSONModelClassProperty.m in Sources */,
 				4875F70E1B149C7B004AECD4 /* AFHTTPRequestOperationManager.m in Sources */,
 				48D1EAB61B15A26E00903BAF /* JSONModelArray.m in Sources */,
@@ -925,6 +970,7 @@
 				48D099861B1895B5001399FB /* DGImageViewerView.m in Sources */,
 				48D099811B18950E001399FB /* DGImageCollectionView.m in Sources */,
 				48D1EABA1B15A26E00903BAF /* JSONAPI.m in Sources */,
+				23D0E1491B2142AC00ACB222 /* releaseWeiBoViewController.m in Sources */,
 				48322BC71B1B593700AAA408 /* CommentModel.m in Sources */,
 				48D1EAB51B15A26E00903BAF /* JSONModel.m in Sources */,
 				48B7E4C91B1BF85100252A2A /* main.m in Sources */,

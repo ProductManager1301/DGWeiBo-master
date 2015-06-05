@@ -48,7 +48,6 @@ typedef void(^requestData)(id responseObject);
 + (void)gainUserInfoWithUID:(NSString *)uid responseObject:(requestData)blockObject failure:(failureError)failure;
 
 
-
 /*!
  * @function 获取微博
  *
@@ -78,6 +77,8 @@ typedef void(^requestData)(id responseObject);
  *
  * @discussion
  *
+ * ID : 指定微博的ID
+ *
  * count : 单页返回的记录条数，默认为50。
  *
  * page  : 返回结果的页码，默认为1。
@@ -99,14 +100,34 @@ typedef void(^requestData)(id responseObject);
  */
 + (void)userSendedWeiboWithID:(NSString *)ID page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure;
 
-/*=================获取当前登录用户及其所关注用户的最新微博===================
- * created_at	微博创建时间
- * ID   : 微博id
- *
- *
- *
- *
+
+/*====================发布一条微博========================
+ *ID为ID
+ *  appkey : 采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。
+ 
+ *  token : 采用OAuth授权方式为必填参数，其他授权方式不需要此参数，OAuth授权后获得。
+ 
+ *  count :   单页返回的记录条数，默认为50。
+ 
+ *  page  :   返回结果的页码，默认为1。
+ 
+ *  baseApp : 是否只获取当前应用的数据。0为否（所有数据），1为是（仅当前应用），默认为0。
 */
-+(void)page:(NSString *)page responseObject:(requestData)blockObject failure:(failureError)failure;
++(void)publishWeibothID:(NSString *)ID status:(NSString *)status rip:(NSString *)rip responseObject:(requestData)blockObject failure:(failureError)failure;
+
+
+
+/*====================发布一条评论========================
+ *  appkey : 采用OAuth授权方式不需要此参数，其他授权方式为必填参数，数值为应用的AppKey。
+ 
+ *  token : 采用OAuth授权方式为必填参数，其他授权方式不需要此参数，OAuth授权后获得。
+ 
+ *  count :   单页返回的记录条数，默认为50。
+ 
+ *  page  :   返回结果的页码，默认为1。
+ 
+ *  baseApp : 是否只获取当前应用的数据。0为否（所有数据），1为是（仅当前应用），默认为0。
+*/
++(void)senderCommentsWithID:(NSString *)ID comment:(NSString *)comment rip:(NSString *)rip responseObject:(requestData)blockObject failure:(failureError)failure;
 
 @end

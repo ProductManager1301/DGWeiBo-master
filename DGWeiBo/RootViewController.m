@@ -38,9 +38,9 @@
                              @{@"image":@"location",
                                @"title":@"发现"},
                              @{@"image":@"lclendar",
-                               @"title":@"我的记录"},
+                               @"title":@"我的评论"},
                              @{@"image":@"edit",
-                               @"title":@"我的评论"}];
+                               @"title":@"发布微博"}];
     }
     return self;
 
@@ -148,8 +148,6 @@
 }
 
 //获取当前不同显示类型的数组内容
-
-
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }

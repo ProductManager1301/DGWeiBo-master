@@ -13,5 +13,6 @@
 #import "UserInfoModel.h"
 #import "LocationModel.h"
 #import "CommentModel.h"
+#import "GetIPAddress.h"
 
 #endif

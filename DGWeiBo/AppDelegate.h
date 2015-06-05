@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#define kAppKey         @"3364315272"
+#define kAppKey         @"141240461"
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) NSString *wbtoken;
-@property (strong, nonatomic) NSString *wbCurrentUserID;
+@property (strong, nonatomic) NSString *wbtoken;  //密匙
+@property (strong, nonatomic) NSString *wbCurrentUserID;  //当前登录用户的ID
 
 @end
 

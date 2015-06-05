@@ -27,8 +27,10 @@
 
 
 typedef NS_ENUM(NSInteger , CURRENT_WEIBO_TYPE){
- CURRENT_WEIBO_TYPE_NEW = 1,  //最新微博
- CURRENT_WEIBO_TYPE_ATTENTION = 2//我关注的微博
+ CURRENT_WEIBO_TYPE_USER_INFO = 0,   //个人中心
+ CURRENT_WEIBO_TYPE_NEW = 1,         //最新微博
+ CURRENT_WEIBO_TYPE_ATTENTION = 2,   //我关注的微博
+ CURRENT_WEIBO_TYPE_RELEASE = 6      //发布微博
 };
 
 @interface ViewController ()<PullRefreshDelegate,UITableViewDelegate,UITableViewDataSource,RootViewControllerDelegate>
@@ -96,12 +98,25 @@ typedef NS_ENUM(NSInteger , CURRENT_WEIBO_TYPE){
     self.title = @"公共微博";
     }else if(_weiboType == CURRENT_WEIBO_TYPE_ATTENTION){
      self.title = @"我的关注";
+        
+    }else if (_weiboType == CURRENT_WEIBO_TYPE_USER_INFO){
+    
+    [self performSegueWithIdentifier:@"myViewWire" sender:nil];
+    [self siderRootViewAction:nil];
+
+        return;
+        
+    }else if (_weiboType == CURRENT_WEIBO_TYPE_RELEASE){
+        [self performSegueWithIdentifier:@"releaseWeiBo" sender:nil];
+        [self siderRootViewAction:nil];
+        
+        return;
     }
     
     [self.weiboTableView reloadDataFirst];
     [self.weiboTableView reloadData];
-    [self siderRootViewAction:nil];
 }
+
 
 #pragma mark - PullRefreshDelegate
 /*下拉刷新触发方法*/

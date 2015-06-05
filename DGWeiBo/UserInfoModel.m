@@ -15,6 +15,8 @@
 {
     return [[JSONKeyMapper alloc]
             initWithDictionary:@{@"description": @"user_description"}];
+    return [[JSONKeyMapper alloc]
+            initWithDictionary:@{@"id": @"ID"}];
 }
 
 @end
