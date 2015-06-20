@@ -1,13 +1,13 @@
 //
-//  MyViewCell.h
+//  MyTableViewCell.h
 //  DGWeiBo
 //
-//  Created by 周建 on 15/6/4.
+//  Created by 罗望芝 on 15/6/5.
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MyViewCell : UITableViewCell
+@interface MyTableViewCell : UITableViewCell
 
 @end

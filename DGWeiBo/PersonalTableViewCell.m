@@ -1,14 +1,14 @@
 //
-//  MyViewCell.m
+//  PersonalTableViewCell.m
 //  DGWeiBo
 //
-//  Created by 周建 on 15/6/4.
+//  Created by  易述宏 on 15/6/1.
 //  Copyright (c) 2015年 钟伟迪. All rights reserved.
 //
 
-#import "MyViewCell.h"
+#import "PersonalTableViewCell.h"
 
-@implementation MyViewCell
+@implementation PersonalTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
